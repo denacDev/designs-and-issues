@@ -1,0 +1,122 @@
+/*                  GENERAL STUFF                    */
+/* ------------------------------------------------ */
+ 
+
+/* LINK        :: color #04ADFF;  [light blue]   */
+/* LINK HOVER  :: color: #F9F030  [light yellow ] */
+/* SMALL       :: font-size: 20px; */
+/* website font       :: font-family: Segoe UI; */
+/* TAB BACKGROUND COLOR :: background-color:#E6E6E6 */
+/* DROP DOWN PANNEL COLOR :: background-color: #FFFBF9; */ 
+/* issue check background color: background-color:#FCFFCE; */
+/* color of logged in person name:: rgb(29, 138, 150);( dark teal ) */
+
+
+
+
+
+
+/*    set default rules all over the website       */
+/* ------------------------------------------------ */
+*{
+    box-sizing: border-box;
+    margin:0;padding:0px;
+    font-family: Segoe UI;
+}
+ 
+ 
+/* set by the privileges */
+.disabled-link{ color:gray !important;  filter: grayscale(100%) !important;}
+
+form{ grid-area:form; margin:40px 0px;  }
+ 
+
+
+
+
+/*     LINKS       */
+/* -------------- */
+
+
+    /* text links */
+    .site-link:active, .site-link:link, .site-link:visited { border-radius:10px;display: block;color:#04ADFF;padding:10px;text-decoration: none;font-weight: bold; }
+    .site-link:hover{ background-color:#F9F030;color:black;cursor: pointer;}
+
+    /* other text links options*/
+    .login-button{width: 100px;margin:auto;margin-top:20px;} /* index.php */
+    .delete-view-issues{max-width:150px;margin:auto;} /* delete_design.php */
+    .issue-check-link{max-width: 100px;margin:auto;margin-top:10px;} .issue-check-link:hover{background-color:lime !important;}   /* issue-view-component.php */
+    .button-view-issues{max-width:150px;margin:auto;} /* design-view-component.php */
+
+    /* navigation links */
+    .nav-link:active, .nav-link:link, .nav-link:visited{font-size: 30px;font-family: 'Segoe UI';font-weight: bold;border-radius:10px;margin:10px;color:black;padding:5px;text-decoration: none;}
+    .nav-link:hover, .nav-link-active{background-color:#F9F030;color:black;}
+
+    /* form buttons */
+    .form-btn, .issue-check-link{ max-width:150px; border-radius:10px; display: block; color:#04ADFF; padding:10px; text-decoration: none; font-weight: bolder;background-color:transparent; margin: auto; border:none;}
+    .form-btn:hover{ background-color:#F9F030;color:black;cursor: pointer;}
+
+
+
+/*      CONTAINERS               */
+/* ----------------------------- */
+
+    /* hold the navigation */
+    nav{  padding-left:100px; margin-bottom:100px;text-align: left;}
+    /* hold the MAIN component CONTENT */
+    .primary-component-container{ max-width:700px;margin:auto; }
+    /* hold the SECONDARY component content */
+    .secondary-component-container{  max-width:420px;margin:auto;}
+
+    .design-component-container, .issue-component-container{ font-size:14px; }
+    
+
+/*     TABS - head of the component    */
+/* -------------------------------------- */
+
+    /* design tab */
+    .design-tab, .issue-tab{position:relative;z-index:1;font-size:0;text-align:left;margin:5px;border-radius:5px ;background-color:#E6E6E6;box-shadow: 0px 5px 6px -5px black;}
+
+    /* issue tab */
+    .issue-tab{ background-color:#04ADFF; }
+    /* control tab */
+    .control-tab{box-shadow: 0px 5px 6px -5px black;position:relative;z-index:1;width:100%;color:white;display:inline-block;font-size:20px;  background-color:#04ADFF;margin-right:10px;padding:10px;padding-left:20px;border-radius:5px;text-align: left;}
+            .title-caption{color:black;display: inline;}
+            .title-value{color:white;}
+
+
+
+ /*     TAB'S BODY - body of the component     */
+/* ---------------------------------------------- */
+
+    /* dropdown-panel */
+    .dropdown-panel,    .primary-component-design-body, .primary-component-issue-body,   .secondary-component-body{ 
+        box-shadow:0px 5px 6px -5px rgb(3, 135, 201);border-radius:0px 0px 5px 5px;background-color:  #FFFBF9;
+        display: grid; grid-gap:10px; justify-content: center;
+        margin:0px 15px;position:relative;top:-20px;z-index:0;
+        border:1px solid #04ADFF; overflow: hidden;
+    }
+    /* the body of all secondary components ( edit/delete/create -- designs/issues) */
+    .secondary-component-body { text-align: center;grid-template-areas: 'form'; grid-template-columns: 100%; }
+    /* body of view designs */
+    .primary-component-design-body{max-height: 350px; opacity:0; height:0px; grid-template-columns:42% 42%;     grid-template-areas: 'left right' 'bottom bottom';transition: all 0.3s linear;}
+    /* body of view issues */
+    .primary-component-issue-body{ max-height: 350px;opacity:0; height:0px;  grid-template-columns:38% 38% 17%; grid-template-areas: 'is-left is-middle is-right' 'is-bottom is-bottom is-bottom'; transition: all 0.3s linear;  }
+    /* used in JAVASCRIPT to show the body of requested PRIMARY COMPONENT ( view design / view issue) */
+    .activate-dropdown{height:100%; opacity:1; padding-top:50px;padding-bottom:20px;}  
+
+
+
+ /*    BODY PANEL - content of component body    */
+/* ---------------------------------------------- */
+ 
+    /* content container */
+    .panel{background-color:  rgb(255, 255, 255);border:1px solid rgb(157, 157, 157);  border-radius:5px;  display: grid; grid-auto-columns: auto;align-content: center;  }
+    .panel-content{ /* na  -- used as box for panel grid to center all the content */}
+
+
+    /*  PANELS content */
+    .value-container{max-width:300px;display:block; margin:5px; text-align: left; border-radius:5px;   }
+    .value-container:nth-child(odd){ background-color:rgb(248, 248, 248);}
+            .value-caption{color:gray;display:inline-block;padding:5px;margin:0px  ; }
+            .value{font-weight:bold;padding:5px;margin:0px; float: right;}

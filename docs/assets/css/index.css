@@ -1,0 +1,31 @@
+
+/* landing page */
+/*  */
+/*  */
+.container-landing-page{
+     
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-landing{ 
+    text-align: center;
+   
+}
+
+.login-container{
+     
+    margin-top:20px;
+    text-align: center;
+}
+.login-name{
+    width:300px;
+    padding:10px;
+    color:black;
+    border-radius:10px 0px 0px 0px;
+    border:1px solid rgb(235, 235, 235);
+}
+.placeholder-option{color:rgb(193, 193, 193);}
+ 

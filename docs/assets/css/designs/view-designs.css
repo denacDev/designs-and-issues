@@ -1,0 +1,47 @@
+
+
+
+ 
+    
+    /* header id */
+    .design-id-container{display:inline-block;font-size:20px;  background-color:#04ADFF;margin-right:10px;padding:10px;border-radius:5px 0px 0px 5px;}
+                
+                .id-caption{display:inline-block; } 
+                .design-id{display:inline-block;color:white; }
+    /* header title */
+    .design-title-container{ display:inline-block;font-size:20px; padding:10px;}
+
+    /* header button controls */
+    .design-control-buttons{ font-size:20px; float: right;display: flex; justify-content: center; align-items: center;}
+                .modify-buttons{ transition: all 0.2s linear; margin:10px;display:inline-block; }
+                .modify-buttons:hover{transform: scale(1.2);cursor: pointer;}
+                .edit-button{}
+                .delete-button{}
+                .dropdown-button{position:relative;  width:26px;height:26px;}
+                .dropdown-button span{position: absolute;transition: .2s;background: black;border-radius: 2px;  }
+                .dropdown-h-line {left: 45%;top: 25%;bottom: 25%;width: 10%;}
+                .dropdown-v-line  {left: 25%;top: 45%;right: 25%;height: 10%;}
+                .dropdown-button:hover .dropdown-h-line, .dropdown-button:hover .dropdown-v-line { transform: rotate(90deg);}
+                .dropdown-button:hover .dropdown-v-line {left: 50%;right: 50%;}
+                      
+
+
+/* body */     
+    
+
+        /* left side content */
+        .design-body-left{grid-area:left;  } 
+        
+        
+        /* right side content */
+        .design-body-right{grid-area:right; } 
+
+        
+        /* BOTTOM PANEL content */
+        .design-body-bottom{grid-area: bottom;    position: relative; background-color:transparent; border:none; box-shadow:none; }
+       
+         
+
+
+
+        

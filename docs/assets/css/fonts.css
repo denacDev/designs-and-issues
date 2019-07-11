@@ -1,0 +1,32 @@
+/* Segoe UI font */
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../fonts/segoeui/UI.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../fonts/segoeui/UI Italic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../fonts/segoeui/UI Bold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('../fonts/segoeui/UI Bold Italic.woff') format('woff');
+    }
+

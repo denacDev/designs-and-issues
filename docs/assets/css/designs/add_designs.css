@@ -1,0 +1,9 @@
+.add-design-container{  max-width:420px;margin:auto;} 
+
+   
+    
+    .form-group{width:100%;/* border:1px solid black; */position: relative;text-align: left;display: grid;grid-template-areas:'label field';grid-template-columns: 50% 50%;}
+    .input-label{grid-area:label; ; margin:2px;padding:4px 20px; display: inline-block;text-align: right;}
+    .input-field{grid-area:field;  margin:2px;padding:4px; float: right; max-width:140px;border:1px solid rgb(235, 235, 235); color:black;border-radius:10px 0px 0px 0px;}
+
+   

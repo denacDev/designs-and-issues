@@ -1,0 +1,37 @@
+.issues-container{ max-width:700px;margin:auto; border:2px solid red; }
+
+
+/*                    HEAD                           */
+/* ------------------------------------------------ */
+
+/* labels on the issue tab head (checked, checkable, cannot check...) */
+.checked-label, .checked-label-info, .checked-label-danger{color:rgb(255, 255, 255); font-weight: bold;display: inline; background-color:rgba(20, 150, 20, 0.653);padding:0px 7px;border-radius:10px;box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7) inset;margin-left:10px; }
+.checked-label-info{background-color:rgb(196, 204, 34) !important;}
+.checked-label-danger{background-color:rgba(255, 0, 0, 0.653) !important;}
+
+ 
+.issue-id-container{padding:0px 10px;font-size:15px;}
+.issue-id{font-weight: bold;}
+.issue-control-buttons{font-size:0px;margin:0px;}
+.issue-buttons{ transition: all 0.2s linear; margin:0px 10px; display: inline-block; width: 20px; height: 20px;  } 
+.issue-buttons:hover{ cursor: pointer;transform: scale(1.2); }
+ 
+
+/*                    BODY                           */
+/* ------------------------------------------------ */
+
+ 
+ 
+.issue-panel-left{grid-area:is-left;}
+.issue-panel-middle{grid-area:is-middle;}
+.issue-panel-right{grid-area:is-right;background-color:#FCFFCE;}
+        .check-container{  max-width:250px;display:block; margin:5px; text-align: center; border-radius:5px;}
+        .checked-caption, .check-caption{font-size:20px;color:red;font-weight: bold;}
+        .checked-caption{color:lime;}
+        .check-button-msg-error{color:red;font-weight: bold;text-decoration:underline;}
+       
+
+.issue-panel-bottom{grid-area:is-bottom;margin:0px 0px 5px 0px;align-content: start;}
+        .issue-description-container{padding:5px;text-align: left;}
+        .description-caption{color:gray;display: inline;}
+        .description-value{color:black;font-weight: bold;display: inline;}
